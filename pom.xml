@@ -135,8 +135,10 @@
                                 <wsdlOption>
                                     <!--根据wsdl地址生成-->
                                     <wsdl>http://localhost:8002/webservice/hello?wsdl</wsdl>
-                                    <!--根据本地wsdl文件生成-->
-                                    <!--<wsdlLocation>classpath:wsdl/author.wsdl</wsdlLocation>-->
+                                    <!--根据本地wsdl文件生成：指定wsdl本地路径-->
+                                    <!--<wsdl>XXX/use.wsdl</wsdl>-->
+                                    <!--wsdlLocation配置生成-->
+                                    <wsdlLocation>http://localhost:8002/webservice/hello?wsdl</wsdlLocation>
                                     <!--生成代码的包路径，如果不配置默认以当前包路径为准-->
                                     <extraargs>
                                         <extraarg>-p</extraarg>
